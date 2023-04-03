@@ -1,0 +1,19 @@
+﻿Het weerbericht voor Maandag 5 december 2022 is:
+Maximum temperatuur: 4 graden
+Minimum temperatuut: 0 graden
+
+Gemiddelde temperatuur is: 3 graden
+Er valt 10mm regen
+Er valt 0cm sneeuw
+
+De zon gaat op om 8:26 uur
+De zon gaat onder om 16:22 uur
+
+De komende 5 dagen is de gemiddelde temperatuur: 6 graden
+Er valt in deze periode 10mm regen, waarbij de meeste regen valt op 8-12-2022 (9mm).
+
+de laagste voorspelde temperatuur is: -4 graden
+De hoogste voorspelde temperatuur is: 3 graden
+
+
+Dit bericht moet in het engels en duits worden vertaald via de aangeleverde methode call. 

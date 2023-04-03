@@ -28,6 +28,7 @@ for (int i = 1; i < 155; i++)
     string json = response.Content.ReadAsStringAsync().Result;
     Pokemon pokemon = JsonSerializer.Deserialize<Pokemon>(json);
 
+
     Console.WriteLine(pokemon.name);
 
     new MySqlCommand(@$"insert into Pokemon values (
