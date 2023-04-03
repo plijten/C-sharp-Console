@@ -21,5 +21,15 @@ namespace Interface
         {
             throw new NotImplementedException("Cat can't scratch yet.");
         }
+
+        void IAnimal.Move()
+        {
+            throw new NotImplementedException();
+        }
+
+        void IAnimal.MakeSound()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

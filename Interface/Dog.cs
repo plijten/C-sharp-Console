@@ -21,5 +21,15 @@ namespace Interface
         {
             throw new NotImplementedException("Hond kan nog niet eten.");
         }
+
+        void IAnimal.Move()
+        {
+            throw new NotImplementedException();
+        }
+
+        void IAnimal.MakeSound()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
