@@ -11,7 +11,9 @@ namespace WeatherApp
 {
     public class Translator
     {
-        private readonly string key = "c24c2d690d2e4ac598374bcd21d4acf5";
+        // Als code niet meer werkt dan via azure een nieuwe aanmaken. Vraag bij PL om dit te doen.
+        // Dan past het in het maandelijks tegoed.
+        private readonly string key = "a46f0f90f05c4257ae6384dee3ddae6e"; //LET OP Code geheim houden!
         private readonly string endpoint = "https://api.cognitive.microsofttranslator.com";
 
         // location, also known as region.

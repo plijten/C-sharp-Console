@@ -4,27 +4,33 @@ class Program
 {
     public static void Main()
     {
-        var weatherForecast = new WeatherForecast
+        try
         {
-            Date = DateTime.Parse("2019-08-01"),
-            TemperatureCelsius = 25,
-            Summary = "Hot"
-        };
+            Persoon persoon = new Persoon(-1);
+            Console.WriteLine(persoon.Leeftijd);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message.ToString());
+        }
 
-        string jsonString = JsonSerializer.Serialize(weatherForecast);
-        File.WriteAllText("c:\\temp\\weerbericht.json", jsonString);
-
-        string test = File.ReadAllText("c:\\temp\\weerbericht.json");
-        var weatherForecast1 = JsonSerializer.Deserialize<WeatherForecast>(test);
-
-        //Console.WriteLine(jsonString);
+        
+        
     }
 
 }
 
-public class WeatherForecast
+public class Persoon
 {
-    public DateTimeOffset Date { get; set; }
-    public int TemperatureCelsius { get; set; }
-    public string? Summary { get; set; }
+    public int Leeftijd { get; set; }
+
+    public Persoon(int leeftijd)
+    {
+        if (leeftijd < 0)
+        {
+            throw new ArgumentException("Leeftijd mag niet negatief zijn.");
+        }
+
+        Leeftijd = leeftijd;
+    }
 }
